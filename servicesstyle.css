@@ -1,0 +1,103 @@
+/* Resetting default margin and padding */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body styles */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #ffffff;
+}
+h1{
+    font-size: 15px;
+}
+
+/* Header styles */
+.header {
+    background-color: #ffffff;
+    color: #fff;
+    padding: 20px 0;
+}
+
+.header .flex {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+}
+
+.header .logo {
+    text-decoration: none;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.navbar a {
+    color: #fff;
+    text-decoration: none;
+    margin-left: 20px;
+}
+
+.navbar a:hover {
+    color: #ffd700;
+}
+
+.icons a {
+    color: #fff;
+    text-decoration: none;
+    margin-left: 20px;
+}
+
+.icons a:hover {
+    color: #ffd700;
+}
+
+/* Services section styles */
+.services {
+    padding: 50px 0;
+}
+
+.services .container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); /* Adjusted minmax value */
+    gap: 30px;
+}
+
+.service {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.service img {
+    max-width: 100%; /* Set max-width to prevent overflow */
+    height: auto; /* Let the height adjust proportionally */
+    margin-bottom: 20px;
+}
+
+.service h3 {
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+.service p {
+    font-size: 16px;
+    color: #666;
+}
+
+/* Footer styles */
+.footer {
+    background-color: #333;
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+}
+
+.footer p {
+    margin-bottom: 0;
+}

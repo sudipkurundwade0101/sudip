@@ -1,0 +1,268 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik+Mono+One&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap');
+
+:root{
+  --yellow: #fed330;
+  --red: #e74c3c;
+  --white: #fff;
+  --black: #222;
+  --light-color: #777;
+  --border:.2rem solid var(--black);
+  }
+
+*{
+  font-family: "Rubik", sans-serif;
+  margin:0; padding:0;
+  box-sizing: border-box;
+  outline: none; border: none;
+  text-decoration: none;
+}
+
+*::selection{
+  background-color: var(--yellow);
+  color:var(--white);
+  }
+  
+  ::-webkit-scrollbar{
+  height: .5rem;
+  width: 1rem;
+  }
+
+  ::-webkit-scrollbar-track{
+    background-color: transparent;
+  }
+
+  ::-webkit-scrollbar-thumb{
+    background-color: var(--yellow);
+  }
+  
+  .logo {
+    background-color: transparent;
+  }
+  
+
+  html{
+    font-size: 62.5%;
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+    stop-opacity: 7rem;
+
+  }
+
+  section{
+    margin: 0 auto;
+    max-width: 1200px;
+    padding: 2rem;
+  }
+
+  .header{
+    position: sticky;
+    top:0; left:0; right: 0;
+    z-index: 1000;
+    border-bottom: var(--border);
+    background-color: var(--white);
+ }
+ .header .flex{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: relative;
+}
+
+  .header .flex .logo {
+    font-size: 2.5rem;
+    color: var(--black);
+  }
+  
+  .header .flex .navbar a{
+    font-size:1.3rem;
+    margin: 0 1rem;
+    color:var(--black);
+  }
+
+  .header .flex .navbar a:hover{
+    color: var(--yellow);
+    text-decoration: underline;
+  }
+
+  .header .flex .icons > *{
+    color: var(--black);
+    font-size: 2.5rem;
+    cursor: pointer;
+    margin-left: 0.8rem;
+  }
+
+  .header .flex .icons > *:hover{
+    color: var(--yellow);
+  }
+
+  .header .flex .icons span{
+    font-size:1.2rem ;
+  }
+
+  
+
+  #menu-btn{
+    display: none;
+  }
+
+
+  .header .flex .profile{
+   background-color: var(--white); 
+   border: var(--border);
+   padding: 1.5rem;
+   text-align: center;
+   position:absolute;
+   top:120%; right:1.2rem;
+   width: 30rem;
+  }
+
+  .header .flex .profile .name{
+    font-size: 2rem;
+    color: var(--black);
+  }
+
+  .header .flex .profile .account a{
+    color:var(--black);
+  }
+
+  .header .flex .profile .account a:hover{
+    color:var(--yellow);
+  }
+
+  .home .slide{
+    display: flex;
+    flex-wrap: wrap-reverse;
+    gap:1.5rem;
+    align-items: center;
+    margin-bottom: 4rem;
+ }
+ 
+ .home .slide .content{
+    flex:1 1 40rem;
+    text-align: center;
+ }
+ 
+ .home .slide .image{
+    flex:1 1 40rem;
+ }
+ 
+ .home .slide .image img{
+    width: 100%;
+ }
+ 
+ .home .slide .content span{
+    font-size: 2.5rem;
+    color:var(--light-color);
+ }
+ 
+ .home .slide .content h3{
+    font-size: 5rem;
+    text-transform: capitalize;
+    color:var(--black);
+    padding:1rem 0;
+ }
+ 
+ .swiper-pagination-bullet-active{
+    background-color: var(--yellow);
+ }
+ 
+
+  .footer .grid{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(7rem ,1fr));
+    gap: 2rem;
+    align-items: flex-start;
+  }
+
+  .footer .grid .box{
+    border: var(--border);
+    padding: 2rem;
+    text-align: center;
+  }
+
+  .footer .grid .box img{
+    height: 10rem;
+    width:100% ;
+    object-fit: contain;
+    margin-bottom:0.5rem; 
+
+  }
+
+  .footer .grid.box h3{
+    margin:1rem 0;
+    font-size: 2rem;
+    color:var(--black);
+    text-transform: capitalize;
+    }
+
+    .footer .grid .box p,
+    .footer .grid .box a{
+    display: block;
+    font-size: 1.7rem;
+    color:var(--light-color);
+    }
+
+
+    .footer .grid .box a:hover{
+      text-decoration: underline;
+    }
+
+    .footer .credit{
+      background-color: var(--black);
+      text-align: center;
+      padding:3rem 2rem;
+      font-size: 2rem;
+      color:var(--white);
+      /* padding-bottom: 10rem; */
+   }
+   
+   .footer .credit span{
+      color:var(--yellow);
+   }
+
+
+
+
+
+
+
+
+  /*media quries*/
+
+  @media(max-width:700px) {
+    html{
+      font-size: 55%;
+    }
+  }
+
+  @media (max-width:544px) {
+    html{
+      font-size: 40%;
+    }
+    #menu-btn{
+      display: inline-block;
+    }
+
+    .header .flex .navbar{
+      position: absolute;
+      top:99% ;right:0;left:0;
+      border-top: var(--border);
+      border-bottom: var(--border);
+      transition: .2s linear;
+
+    }
+    .header .flex .navbar a{
+      margin:1rem;
+      display: block;
+    }
+  }
+
+  @media (max-width:230px) {
+    html{
+      font-size: 30%;
+    }
+    .header .flex .icons > *{
+      font-size: 2.3rem;
+    }
+    
+  }
