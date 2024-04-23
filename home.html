@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>Home</title>
+  <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"> 
+  <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+    <!--Header section start here-->
+    <!--Header section start here-->
+<header class="header">
+   <section class="flex">
+      <a href="home.html" class="logo">
+         <img src="/Assets/img/ram.jpeg" alt="Shree Ram Electrics Logo">
+       </a>
+       
+     <nav class="navbar">
+      <h1> <a href="home.html">Home</a>
+       <a href="about.html">About</a>
+       <a href="Services.html">Services</a>
+       <a href="contact.html">Contact</a></h1>
+     </nav>
+     <div class="icons">
+      <a href="search.html"><i class="fas fa-search"></i></a>
+      <a href="cart.html"><i class="fas fa-shopping-cart"></i><span>(3)</span></a> 
+      <div id="user-btn" class="fa fa-user"></div>
+      <div id="menu-btn" class="fa fa-bars"></div>
+     </div>
+   </section>
+ </header>
+ <!--Header section end here-->
+ 
+    <!--Header section end here-->
+    <section class="home">
+      <div class="swiper home-slider">
+         <div class="swiper-wrapper">
+            <div class="swiper-slide slide">
+               <div class="content">
+                  <h3>Industrial</h3>
+                  <a href="#" class="btn">see menus</a>
+               </div>
+               <div class="image">
+                  <img src="./Assets/img/ind.png" alt="Industrial Image">
+               </div>
+            </div>
+            <div class="swiper-slide slide">
+               <div class="content">
+                  <h3>Commercial</h3>
+                  <a href="#" class="btn">see menus</a>
+               </div>
+               <div class="image">
+                  <img src="./Assets/img/co.png" alt="Commercial Image">
+               </div>
+            </div>
+            <div class="swiper-slide slide">
+               <div class="content">
+                  <h3>Residential</h3>
+                  <a href="#" class="btn">see menus</a>
+               </div>
+               <div class="image">
+                  <img src="./Assets/img/re.png" alt="Residential Image">
+               </div>
+            </div>
+         </div>
+         <div class="swiper-pagination"></div>
+      </div>
+   </section>
+    <!--footer begins-->
+   <footer class="footer">
+      <section class="grid">
+         <div class="box">
+            <img src="./Assets/img/email-icon.png" alt="">
+            <h3>our email</h3>
+            <a href="mailto:sudipkurundwade@gmail.com">sudipkurundwade@gmail.com</a>
+         </div>
+         <div class="box">
+            <img src="./Assets/img/phone-icon.png" alt="">
+            <h3>our number</h3>
+            <a href="tel:+918055203511">+91 8055203012</a>
+         </div>
+         <div class="box">
+            <img src="./Assets/img/map-icon.png" alt="">
+            <h3>our location</h3>
+            <a href="#">Near marathi school,Korochi</a>
+         </div>
+         <div class="box">
+            <img src="./Assets/img/clock-icon.png" alt="">
+            <h3>our opening time</h3>
+            <p>7:00am to 8:00pm</p>
+         </div>
+      </section>
+   </footer>
+    <!--footer ends-->
+    <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+<script>
+   var swiper = new Swiper(".home-slider", {
+      loop:true,
+      grabCursor:true,
+      effect: "flip",
+      flipEffect: {
+        rotate: 30,
+        slideShadows: false,
+      },
+      pagination: {
+         el: ".swiper-pagination",
+         clickable:true,
+      },
+   });
+</script>
+
+</body>
+</html>
